@@ -22,6 +22,15 @@ class TestMetadataExtractor(unittest.TestCase):
         """Test GPS conversion with None input"""
         result = convert_to_degrees(None)
         self.assertIsNone(result)
+        
+class TestSteganographyDetector(unittest.TestCase):
+    """Test steganography detection functionality"""
+    
+    def test_detect_steganography_returns_string(self):
+        """Test that steganography detector returns a string"""
+        # This would need actual test images
+        pass
+        
 
 if __name__ == '__main__':
     unittest.main()
