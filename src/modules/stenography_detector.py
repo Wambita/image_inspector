@@ -36,4 +36,7 @@ def detect_steganography(image_path):
                 if len(text) > 50:
                     break
 
-    return text
+    if "BEGIN PGP" in text or len(text) > 50:
+        return text.strip()
+    
+    return "No hidden data detected"
