@@ -119,22 +119,17 @@ The tool implements LSB (Least Significant Bit) extraction:
 ```
 image-inspector/
 ├── src/
-│   ├── __init__.py
+│   ├
 │   ├── image-inspector.py      # Main CLI entry point
 │   └── modules/
-│       ├── __init__.py
 │       ├── metadata_extractor.py
 │       └── steganography_detector.py
 ├── tests/
 │   └── test_image_inspector.py
-├── docs/
-│   └── USAGE.md
 ├── examples/
 │   └── example_usage.py
 ├── requirements.txt
 ├── setup.py
-├── LICENSE
-├── CONTRIBUTING.md
 └── README.md
 ```
 
@@ -198,10 +193,6 @@ All contributions must adhere to ethical standards:
 - No malicious code
 - Respect privacy and data protection laws
 - Educational purpose only
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
