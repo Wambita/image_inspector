@@ -173,7 +173,31 @@ Potential improvements for this tool:
 - Support for other hidden data formats
 
 ## Contributing
+### How to Contribute
 
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Code Style
+
+- Follow PEP 8 guidelines
+- Add docstrings to all functions
+- Keep functions minimal and focused
+- Write clear commit messages
+
+### Testing
+
+Ensure your code works with the provided test images before submitting.
+
+### Ethical Guidelines
+
+All contributions must adhere to ethical standards:
+- No malicious code
+- Respect privacy and data protection laws
+- Educational purpose only
 
 ## License
 
