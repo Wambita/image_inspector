@@ -15,7 +15,8 @@ OPTIONS:
     -o  "FileName"        Specify the file name to save output
     --help                Display this help message
         """
-    )  
+    )
+    
     parser.add_argument('-m', '--metadata', action='store_true', help='Extract metadata')
     parser.add_argument('-s', '--steganography', action='store_true', help='Detect steganography')
     parser.add_argument('-o', '--output', help='Output file name')
@@ -25,5 +26,25 @@ OPTIONS:
         print("Welcome to Image Inspector\n")
         parser.print_help()
         return
+    
+    args = parser.parse_args()
+    
+    result = ""
+    
+    if args.metadata:
+        result = extract_metadata(args.image)
+    elif args.steganography:
+        result = detect_steganography(args.image)
+    else:
+        print("Please specify -m for metadata or -s for steganography")
+        return
+    
+    print(result)
+    
+    if args.output:
+        with open(args.output, 'w') as f:
+            f.write(result)
+        print(f"Data saved in {args.output}")
+
 if __name__ == "__main__":
     main()
