@@ -15,4 +15,9 @@ OPTIONS:
     -o  "FileName"        Specify the file name to save output
     --help                Display this help message
         """
-    )
+    )  
+    parser.add_argument('-m', '--metadata', action='store_true', help='Extract metadata')
+    parser.add_argument('-s', '--steganography', action='store_true', help='Detect steganography')
+    parser.add_argument('-o', '--output', help='Output file name')
+    parser.add_argument('image', help='Image file to analyze')
+    
