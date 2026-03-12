@@ -21,3 +21,9 @@ OPTIONS:
     parser.add_argument('-o', '--output', help='Output file name')
     parser.add_argument('image', help='Image file to analyze')
     
+    if len(sys.argv) == 1 or '--help' in sys.argv:
+        print("Welcome to Image Inspector\n")
+        parser.print_help()
+        return
+if __name__ == "__main__":
+    main()
