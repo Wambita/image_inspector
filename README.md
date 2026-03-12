@@ -3,7 +3,7 @@
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-AImge Inspector is a  professional command-line tool for analyzing images to extract hidden information including metadata and steganographic data.
+Image Inspector is a  professional command-line tool for analyzing images to extract hidden information including metadata and steganographic data.
 
 ## Features
 
